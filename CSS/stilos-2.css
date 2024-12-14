@@ -1,0 +1,127 @@
+/* CSS do Front-End principal / navegação */
+/* CSS do Front-End principal / navegação */
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+h1{
+    text-align: center;
+    margin: 25px;
+}
+.cabeçalho{
+    color: rgb(0,128,250,98);
+    font-family: sans-serif;
+    text-decoration:none;
+}
+.navegação{
+    position: relative;
+    left: 1500px;
+    bottom:65px;
+    width: 75px;
+    font-size: 25px;
+    color:rgb(0,0,0);
+    float: left;
+    text-decoration:none;
+    font-family:sans-serif;
+}
+.navegação:hover{
+    color:rgb(0,128,250,98)
+}
+.butão{
+    position: relative;
+    left:1540px;
+    bottom:65px;
+    width:70px;
+    height: 30px;
+    background-color:rgb(0,128,250,98);
+    color:white;
+    border-style:solid;
+}
+
+/*CSS da área principal*/
+/*CSS da área principal*/
+
+.logo{
+    text-align:center;
+    font-family:sans-serif;
+    position: relative;
+    bottom: 35px;
+    
+}
+
+#conteiner{
+    position: relative;
+    left:800px;
+    bottom: 40px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 300px;
+    margin:15px;
+    border-radius: 20px;
+    border-color:rgb(0,128,250,98)
+}
+
+#mensagem{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border-color:rgb(0,128,250,98)
+}
+
+.but{
+    position: relative;
+    right: 280px;
+    top: 40px;
+    width: 270px;
+    background-color: rgb(0,128,250,98);
+    }
+
+b{
+    color: white;
+}
+
+.local{
+    text-align:center;
+    position: relative;
+    top:80px;
+    font-size:35px;
+}
+iframe{
+    position: relative;
+    left: 5px;
+    top:60px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 1900px;
+}
+
+img{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 680px;
+    padding: 10px;
+    border-radius:50%;
+}
+
+img:hover{
+    transition: 0.5;
+    left: 15px;
+}
+/*Flex Box or Media Query*/
+
+
+
+
+

@@ -1,18 +1,19 @@
 /*CSS do Header*/
 
 body{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 header a{
     text-decoration: none;
 }
-h1{
+header h1{
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(0,128,250,98);
 }
-.navegação{
+
+ header nav .navegação{
     position: relative;
     left: 1500px;
     bottom:65px;
@@ -23,10 +24,10 @@ h1{
     text-decoration:none;
     font-family:sans-serif;
 }
-.navegação:hover{
-    color:rgb(0,128,250,98)
+header nav .navegação:hover{
+    color:rgb(0,128,250,98);
 }
-.butão{
+header nav .butão{
     position: relative;
     left:1540px;
     bottom:65px;
@@ -37,35 +38,42 @@ h1{
     border: none;
     border-radius: 15px;
 }
-.butão:hover{
+header nav .butão:hover{
     background-color: #0575E6;
 }
 
 /*CSS do Main*/
 
-.filtro h2{
-    font-size: 17px;
-    text-align: center;
-    color: rgb(0,0,0);
-    text-decoration:none;
-    font-family:Arial, Helvetica, sans-serif;
-
-}
 main {
-    margin: 5px;
-    width: 300px;
-    height: 700px;
-     border: solid 2px;
-
-}
-.filtro{
     display: flex;
-    flex-direction:column;
-    float:left;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+} 
+main div{
+    width: 500px;
+    height: 400px;
+    margin: 5px;
+    border: solid 1px black;
+}
+main .elemento1 img{
+    border-radius: 5px;
+
+}
+main .elemento1 .navigation{
+    
+}
+main .elemento1 button{
+     height: 30px;
+     border: none;
+     border-radius: 15px;
+    background-color: green;
+    padding: 20px;
+}
+main .elemento1 button:hover{
+    color: white;
 }
 
-
-/**/
 
 /*CSS do Footer*/
 
@@ -77,15 +85,14 @@ footer{
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-h2{
+footer h2{
     color: rgb(0,128,250,98);;
     text-align: center;
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
-address{
+footer address{
     display: flex;
     flex-direction:column;
     position: relative;
@@ -93,37 +100,33 @@ address{
     margin: 10px;
     padding: 50px;
 }
-address img{
+footer address img{
     width: 30px;
     padding: 10px;
     color: #0469C7;  
 }
-form{
+footer form{
     display: flex;
     flex-direction:column;
     position: relative;
     left: 780px;
     bottom: 250px;
     width: 350px;
-    
 }
-form input{
+footer form input{
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
     border: solid 1px rgb(0,0,0);
 }
-iframe{
-    position: relative;
-}
-textarea{
+footer form textarea{
     position: relative;
     left: 10px;
     width: 325px;
     border: solid 1px rgb(0,0,0);
     border-radius: 5px;
 }
-form button{
+footer form button{
     width: 130px;
     height: 35px;
     margin: 25px;
@@ -132,22 +135,28 @@ form button{
     color: white;
     background-color: rgb(0,128,250,98);
 }
-form button:hover{
+footer form button:hover{
     background-color: #0469C7;
 }
-.imagens{
+footer iframe{
+    position: relative;
+    bottom: 800px;
+    margin: 20px;
+    float: right;
+}
+footer .imagens{
     display: flex;
     justify-content: center;
     position: relative;
     left: 300px;
     bottom: 300px;
 }
-.imagens img{
+footer .imagens img{
     width: 40px;
     margin: 12px;
     border-radius:50%;
 }
-section{
+footer section{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -155,22 +164,13 @@ section{
     left: 300px;
     bottom: 310px;
 }
-section p{
+footer section p{
     margin: 10px;
     font-size: 15px;
     text-align: center;
 }
-
-
 .mensage{
     text-align: center;
-}
-iframe{
-    position: relative;
-    bottom: 800px;
-    margin: 20px;
-    float: right;
-
 }
 
 /*Responsividade navigation*/

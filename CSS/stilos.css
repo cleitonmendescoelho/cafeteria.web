@@ -1,46 +1,59 @@
 /*CSS do Header*/
 
-body{
+body {
     padding: 0px;
     margin: 0px;
 }
-header a{
-    text-decoration: none;
-}
-header h1{
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(0,128,250,98);
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
- header nav .navegação{
-    position: relative;
-    left: 1500px;
-    bottom:65px;
-    width: 75px;
-    font-size: 25px;
-    color:rgb(0,0,0);
-    float: left;
-    text-decoration:none;
-    font-family:sans-serif;
+nav a {
+    text-decoration: none;
 }
-header nav .navegação:hover{
-    color:rgb(0,128,250,98);
+
+nav h1 {
+    text-align: center;
+    color: rgb(0, 128, 250, 98);
 }
-header nav .butão{
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
     position: relative;
-    left:1540px;
-    bottom:65px;
-    width:70px;
-    height: 30px;
-    background-color:rgb(0,128,250,98);
-    color:white;
+    bottom: 50px;
+    /* margin: 25px; */
+
+}
+
+nav li {
+    margin: 8px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header ul li a:hover {
+    color: rgb(0, 128, 250, 98);
+}
+
+nav ul li button {
+    background-color: rgb(0, 128, 250, 98);
     border: none;
-    border-radius: 15px;
+    border-radius: 40px;
+    width: 70px;
+    height: 25px;
 }
-header nav .butão:hover{
-    background-color: #0575E6;
+
+header ul li a button:hover {
+    color: white;
 }
+
 
 /*CSS do Main*/
 
@@ -48,129 +61,172 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap:wrap;
-} 
-main div{
-    width: 500px;
-    height: 400px;
+    flex-wrap: wrap;
+}
+
+main .catalogo {
+    width: 450px;
+    height: 500px;
     margin: 5px;
     border: solid 1px black;
 }
-main .elemento1 img{
-    border-radius: 5px;
+
+main .catalogo img {
+    width: 450px;
+    height: 270px;
 
 }
-main .elemento1 .navigation{
-    
-}
-main .elemento1 button{
-     height: 30px;
-     border: none;
-     border-radius: 15px;
-    background-color: green;
-    padding: 20px;
-}
-main .elemento1 button:hover{
-    color: white;
-}
 
-
-/*CSS do Footer*/
-
-footer{
-    position: relative;
-    top: 800px;
-    height: 730px;;
-    background: #2980B9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-footer h2{
-    color: rgb(0,128,250,98);;
-    text-align: center;
-    text-decoration: underline;
+main .catalogo p {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+main .catalogo .compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 
 }
-footer address{
-    display: flex;
-    flex-direction:column;
-    position: relative;
-    top: 75px;
-    margin: 10px;
-    padding: 50px;
-}
-footer address img{
-    width: 30px;
-    padding: 10px;
-    color: #0469C7;  
-}
-footer form{
-    display: flex;
-    flex-direction:column;
-    position: relative;
-    left: 780px;
-    bottom: 250px;
-    width: 350px;
-}
-footer form input{
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    border: solid 1px rgb(0,0,0);
-}
-footer form textarea{
-    position: relative;
-    left: 10px;
-    width: 325px;
-    border: solid 1px rgb(0,0,0);
-    border-radius: 5px;
-}
-footer form button{
-    width: 130px;
+
+ion-icon {
+    width: 35px;
     height: 35px;
-    margin: 25px;
+    margin: 10px;
+    color: blue;
+
+}
+
+main .catalogo label {
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .catalogo button {
+    width: 150px;
+    height: 40px;
     border: none;
-    border-radius:5px;
+    border-radius: 15px;
+    background-color: green;
+}
+
+main .catalogo button:hover {
     color: white;
-    background-color: rgb(0,128,250,98);
 }
-footer form button:hover{
-    background-color: #0469C7;
+
+.player {
+    /* display: flex;
+    justify-content: center; */
+
 }
-footer iframe{
-    position: relative;
-    bottom: 800px;
-    margin: 20px;
-    float: right;
+
+.player video {
+    width: 100%;
+    /* Garante que o player ocupe toda a tela*/
+    height: 600px;
+    object-fit: cover;
+    /* Garante que a altura aplicada no player seja aplicada sem distorção na proporção das medidas*/
+
 }
-footer .imagens{
+
+section {
+    padding: 60px;
+}
+
+.pages {
     display: flex;
     justify-content: center;
-    position: relative;
-    left: 300px;
-    bottom: 300px;
-}
-footer .imagens img{
-    width: 40px;
-    margin: 12px;
-    border-radius:50%;
-}
-footer section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    position: relative;
-    left: 300px;
-    bottom: 310px;
-}
-footer section p{
-    margin: 10px;
-    font-size: 15px;
-    text-align: center;
-}
-.mensage{
-    text-align: center;
+    gap: 30px
 }
 
-/*Responsividade navigation*/
+.pages a {
+    text-decoration: none;
+    color: black;
+}
+
+.pages a:hover {
+    color: rgb(0, 128, 250, 98);
+}
+
+/* Footer */
+
+footer {
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    gap: 100px;
+}
+footer .sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sobre h3{
+    font-family: sans-serif;
+}
+/* footer .sobre .content-icons{} */
+
+.content-icons .icons{
+    display: flex;
+}
+
+.content-icons .icons ion-icon{
+    color: black;
+    width: 20px;
+}
+.content-icons .icons p{
+    color: rgba(255, 255, 255, 0.582);
+}
+
+footer .produtos{
+    display:flex;
+    flex-direction:column;
+    align-items: baseline;
+    
+
+}
+
+footer .produtos h3{
+    font-family: sans-serif;
+}
+footer .produtos a{
+    text-decoration: none;
+    margin: 10px;
+    color:rgba(255, 255, 255, 0.582);
+}
+footer .produtos a:hover{
+    text-decoration: underline;
+}
+
+footer .info{
+    display: flex;
+    flex-direction: column;
+}
+footer .info h3{
+    font-family: sans-serif;
+}
+footer .info a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.582);
+    margin: 10px;
+}
+footer .info a:hover{
+    text-decoration: underline;
+}
+footer .iframe iframe{
+    margin-left: 330px;
+}
+
+/* footer .ecopy{
+    display: flex;
+    flex-direction: column;
+    color: white;
+} */
+

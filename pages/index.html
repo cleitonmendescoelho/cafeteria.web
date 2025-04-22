@@ -12,11 +12,11 @@
 
 <body>
     <header>
+        <a href="index.html">
+            <h1>Cafeteria.Web</h1>
+        </a>
         <nav>
-            <a href="index.html">
-                <h1>Cafeteria.Web</h1>
-            </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html" class="navegação">Inicio</a></li>
                 <li><a href="index-1.html" class="navegação">Blog</a></li>
                 <li><a href="#link" class="navegação">Contatos</a></li>
@@ -25,18 +25,14 @@
             </ul>
         </nav>
         <div class="player">
-            <div class="slide-play">
-                <video src="/players/player1.mp4" autoplay loop></video>
+            <div class="slide-play active">
+                <video src="/players/player1.mp4" autoplay muted></video>
             </div>
             <div class="slide-play">
-                <video src="/players/coffe_Barley_Grain.mp4" autoplay loop></video>
+                <video src="/players/coffe_Barley_Grain.mp4" muted></video>
             </div>
             <div class="slide-play">
-                <video src="/players/player2.mp4" autoplay loop></video>
-            </div>
-            <div class="next-buttons">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <video src="/players/player2.mp4" muted></video>
             </div>
         </div>
     </header>
@@ -164,39 +160,39 @@
         2- Usar propriedades CSS específicas para ajustar o layout dos elementos
         -->
         <div class="content-footer">
-        <div class="sobre">
-            <h3>cafeteria.web</h3>
-            <div class="content-icons">
-                <div class="icons">
-                    <ion-icon name="location"></ion-icon>
-                    <p> 72210-123 - Distrito Federal (DF)</p>
-                </div>
-                <div class="icons">
-                    <ion-icon name="call"></ion-icon>
-                    <p>+55 (61) 98765-4321</p>
-                </div>
-                <div class="icons">
-                    <ion-icon name="mail"></ion-icon>
-                    <p>cafeteria.web@gmail.com</p>
+            <div class="sobre">
+                <h3>cafeteria.web</h3>
+                <div class="content-icons">
+                    <div class="icons">
+                        <ion-icon name="location"></ion-icon>
+                        <p> 72210-123 - Distrito Federal (DF)</p>
+                    </div>
+                    <div class="icons">
+                        <ion-icon name="call"></ion-icon>
+                        <p>+55 (61) 98765-4321</p>
+                    </div>
+                    <div class="icons">
+                        <ion-icon name="mail"></ion-icon>
+                        <p>cafeteria.web@gmail.com</p>
 
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="produtos">
-            <h3>Produtos</h3>
-            <a href="">Nescafé</a>
-            <a href="">Cafe tradicional</a>
-            <a href="">Cafe com leite</a>
-            <a href="">Café personalizados</a>
+            <div class="produtos">
+                <h3>Produtos</h3>
+                <a href="">Nescafé</a>
+                <a href="">Cafe tradicional</a>
+                <a href="">Cafe com leite</a>
+                <a href="">Café personalizados</a>
 
-        </div>
-        <div class="info">
-            <h3>Mais informações</h3>
-            <a href="">Inicio</a>
-            <a href="">Blog</a>
-            <a href="">Contatos</a>
- 
-        </div>
+            </div>
+            <div class="info">
+                <h3>Mais informações</h3>
+                <a href="">Inicio</a>
+                <a href="">Blog</a>
+                <a href="">Contatos</a>
+
+            </div>
         </div>
         <section>
             <div class="ecopy">
@@ -205,37 +201,29 @@
         </section>
     </footer>
 
+    <!-- Player - JS -->
+    <script>
+        const slides = document.querySelectorAll('.slide-play');
+        let current = 0;
 
+        // Inicia o primeiro vídeo
+        let video = slides[current].querySelector('video');
+        video.play();
+        video.onended = nextSlide;
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        function nextSlide() {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            let next = slides[current];
+            next.classList.add('active');
+
+            let vid = next.querySelector('video');
+            vid.currentTime = 0;
+            vid.play();
+            vid.onended = nextSlide;
+        }
+
+    </script>
 </body>
+
 </html>
-
-<script>
-// Players
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Função para avançar ou retroceder os vídeos
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Função principal que controla a exibição dos vídeos
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slide-play");
-    
-    if (n > slides.length) {slideIndex = 1}  // Se passar do último, volta ao primeiro
-    if (n < 1) {slideIndex = slides.length} // Se for menor que o primeiro, vai para o último
-    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; // Esconde todos os vídeos
-        slides[i].querySelector("video").pause(); // Pausa os vídeos
-    }
-    
-    slides[slideIndex - 1].style.display = "block"; // Exibe o vídeo atual
-    slides[slideIndex - 1].querySelector("video").play(); // Reproduz o vídeo atual
-}
-</script>

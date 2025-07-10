@@ -88,6 +88,36 @@ header nav .menu li a button:hover {
     object-fit: cover;
   }
 
+.filter{
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .filter img{
+    width: 20px;
+    margin: 15px;
+  }
+
+  .filter .search{
+    position: relative; /* Icon-Input*/
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .filter .search .pesquisa{
+    position: absolute; /* Icon-Input*/
+    height: 100%; /* Icon-Input*/
+    width: 100%; /* Icon-Input*/
+  }
+  ion-icon{
+    position: absolute; /* Icon-Input*/
+    left: 265px; /* Icon-Input*/
+  }
+
 main {
     display: flex;
     flex-direction: row;

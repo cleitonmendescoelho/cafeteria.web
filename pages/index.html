@@ -31,6 +31,13 @@
             </div>
         </div>
     </header>
+    <section class="filter">
+        <img src="/imagens/filter.png" alt="" title="">
+        <div class="search">
+        <input type="search" class="pesquisa" placeholder="Pesquisar">
+        <ion-icon name="search-outline"></ion-icon>
+        </div>
+    </section>
     <main>
         <div class="catalogo">
             <img src="/Imagens/produtos/52268c29-0f41-47ee-acff-446e1e22e6e2.jpg" alt="" width="">
@@ -233,8 +240,13 @@
     </footer>
 
     <!--JS -->
+
+    <!-- JS - Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- js - Players -->
     <script>
-        // JS - Players
         const slides = document.querySelectorAll('.slide-play');
         let current = 0;
         let video = slides[current].querySelector('video');
@@ -253,9 +265,7 @@
             vid.onended = nextSlide;
         }
 
-        // new js
-        
-
     </script>
+
 </body>
 </html>

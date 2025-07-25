@@ -1,0 +1,211 @@
+/* CSS do Front-End principal / navegação */
+
+body{
+    margin: 0px;
+}
+h1{
+    text-align:center;
+    margin: 25px;
+}
+.cabeçalho{
+    color: rgb(0,128,250,98);
+    font-family: sans-serif;
+    text-decoration:none;
+}
+.navegação{
+    position: relative;
+    left: 1525px;
+    bottom:150px;
+    width: 75px;
+    font-size: 25px;
+    color:rgb(0,0,0);
+    float: left;
+    text-decoration:none;
+    font-family:sans-serif;
+}
+.navegação:hover{
+    color:rgb(0,128,250,98)
+}
+.butão{
+    position: relative;
+    left:1568px;
+    bottom:150px;
+    width:70px;
+    height: 30px;
+    background-color:rgb(0,128,250,98);
+    color:white;
+    border-style:solid;
+}
+
+/*CSS do rodapé*/
+
+footer{
+    display: flex;
+}
+
+#logo1{
+    position: relative;
+    left: 30px;
+    bottom: 200px;
+    width: 40px;
+    height: 40px;
+}
+#logo1:hover{
+    
+    transition:0.5s;
+}
+#logo2{
+    position: relative;
+    left: 30px;
+    bottom:200px;
+    width: 40px;
+    height: 40px;
+}
+#logo3{
+    position: relative;
+    left: 30px;
+    bottom:200px;
+    width: 40px;
+    height: 40px;
+}
+.endereço{
+position: relative;
+left: 15px;
+font-size: 20px;
+width: 320px;
+bottom:450px;
+}
+.endereço:hover{
+    color:rgb(0,128,250,98)
+}
+
+/*CSS do Blog*/
+
+h2{
+    position: relative;
+    margin: 35px;
+    top: 45px;
+    font-family: sans-serif;
+}
+#img1{
+    position: relative;
+    top:22px;
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+    margin-left:23px;
+    
+}
+#img1:hover{
+    transition:0.3s;
+    top:10px;
+}
+#img2{
+    position: relative;
+    top:21px;
+    left:25px;
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+}
+#img2:hover{
+    transition: 0.3s;
+    top:9px;
+}
+#img3{
+    position: relative;
+    top:22px;
+    width: 600px;
+    left: 50px;
+    bottom: 33px;
+    height: 500px;
+    border-radius: 5px;
+    
+    
+}
+#img3:hover{
+    transition: 0.3s;
+    top:13px;
+}
+#img4{
+    position: relative;
+    top: 150px;
+    width: 600px;
+    height: 500px;    
+    border-radius: 5px;
+    margin-left:20px;
+}
+#img4:hover{
+    transition: 0.3s;
+    top:135px
+}
+#img5{
+    position: relative;
+    top: 150px;
+    left:25px;
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+}
+#img5:hover{
+    transition: 0.3s;
+    top: 135px;
+}
+#img6{
+    position: relative;
+    top: 150px;
+    left: 50px;
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+}
+#img6:hover{
+    transition: 0.3s;
+    top: 135px;
+}
+#parag1{
+    position: relative;
+    bottom:515px;
+    margin: 10px;
+    width: 600px;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+#parag2{
+    position: relative;
+    bottom: 640px;
+    left:656px;
+    width: 585px;
+    font-size:20px;
+}
+#parag3{
+    position: relative;
+    left: 1287px;
+    width: 585px;
+    bottom: 750px;
+    font-size:20px;
+}
+#parag4{
+    position: relative;
+    bottom: 245px;
+    margin:33px;
+    width:600px;
+    font-size:20px;
+}
+#parag5{
+    position: relative;
+    bottom: 370px;
+    margin:33px; 
+    left: 630px;
+    width:600px;
+    font-size:20px;
+}
+#parag6{
+    position: relative;
+    bottom:495px;
+    margin:33px;
+    left: 1260px;
+    width:600px;
+    font-size:20px;
+}

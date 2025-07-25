@@ -1,0 +1,305 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header  nav h1 {
+    position:absolute;
+    left: 50%;
+    text-align: center;
+    color: rgb(0, 128, 250, 98);
+    text-decoration: none;
+}
+
+ header nav .menu {
+    display: flex; 
+    list-style: none;
+    justify-content: flex-end;  
+    align-items: flex-start;
+    position: ;
+} 
+
+header nav .menu li {
+    margin: 7px;
+    font-size: 20px;
+    
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: black;
+
+}
+header nav .menu li  ion-icon{
+    width: 26px;
+}
+
+header nav .menu li a:hover {
+    color: rgb(0, 128, 250, 98);
+}
+
+header nav .menu li a button {
+    background-color: rgb(0, 128, 250, 98);
+    border: none;
+    border-radius: 40px;
+    width: 70px;
+    height: 25px;
+}
+
+header nav .menu li a button:hover {
+    color: white;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+    height: 900px; 
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  
+  .player .slide-play {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+  }
+  
+  .player .slide-play.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .player .slide-play video {
+    width: 1855px;
+    height: 900px;
+    object-fit: cover;
+  }
+
+.filter{
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .filter img{
+    width: 20px;
+    margin: 15px;
+  }
+
+  .filter .search{
+    position: relative; /* Icon-Input*/
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .filter .search .pesquisa{
+    position: absolute; /* Icon-Input*/
+    height: 100%; /* Icon-Input*/
+    width: 100%; /* Icon-Input*/
+  }
+  ion-icon{
+    position: absolute; /* Icon-Input*/
+    left: 265px; /* Icon-Input*/
+  }
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .catalogo {
+    width: 450px;
+    height: 500px;
+    margin: 5px;
+    border: solid 1px black;
+}
+
+main .catalogo img {
+    width: 450px;
+    height: 270px;
+
+}
+
+main .catalogo p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+main .catalogo .compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+main .catalogo .compra label {
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .catalogo .compra button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: green;
+}
+
+main .catalogo .compra button:hover {
+    color: white;
+}
+
+section {
+    padding: 60px;
+}
+
+section .pages {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+section .pages a {
+    text-decoration: none;
+    color: black;
+}
+
+section .pages a:hover {
+    color: rgb(0, 128, 250, 98);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    height:382px;
+    background: #2980b9;  /*fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #2980b9); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                                                
+}
+
+footer .content-footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer .content-footer .sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .content-footer .sobre h3{
+    font-family: sans-serif;
+}
+
+footer .content-footer .content-icons .icons{
+    display: flex;
+}
+
+footer .content-footer .content-icons .icons ion-icon{
+    color: black;
+    width: 20px;
+}
+footer .content-footer .content-icons .icons p{
+    color: rgba(255, 255, 255, 0.836);
+}
+
+footer .produtos{
+    display:flex;
+    flex-direction:column;
+    align-items: baseline;
+}
+
+footer .produtos h3{
+    font-family: sans-serif;
+}
+
+footer .produtos a{
+    text-decoration: none;
+    margin: 10px;
+    color:rgba(255, 255, 255, 0.842);
+}
+
+footer .produtos a:hover{
+    text-decoration: underline;
+    color: black;
+    transition: 0.5s;
+}
+
+footer .info{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .info h3{
+    font-family: sans-serif;
+}
+
+footer .info a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.842);
+    margin: 10px;
+}
+
+footer .info a:hover{
+    color: black;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+footer .iframe iframe{
+    margin-left: 330px;
+}
+
+section .ecopy p{
+    text-align: center;
+}
+
+/* Config CSS*/
+
+/* Animação - Video */
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    40% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+}
+
+/* Responsividade */
+
